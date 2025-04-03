@@ -1,7 +1,15 @@
 import React from "react";
 
 const FactoryPattern = () => {
-  return <div>FactoryPattern</div>;
+  return (
+    <div className="d-flex gap-5 justify-content-center">
+      {CreateButton("primary")}
+      {CreateButton("secondary")}
+      {CreateButton("danger")}
+      {CreateButton("info")}
+      {CreateButton("")}
+    </div>
+  );
 };
 
 function CreateButton(type) {
@@ -12,8 +20,10 @@ function CreateButton(type) {
       return <button className="btn btn-secondary">Secondary</button>;
     case "danger":
       return <button className="btn btn-danger">Danger</button>;
+    case "info":
+      return <button className="btn btn-info">Info</button>;
     default:
-      return <button className="btn btn-default">Default</button>;
+      return <button className="btn btn-default t-white">Default</button>;
   }
 }
 
