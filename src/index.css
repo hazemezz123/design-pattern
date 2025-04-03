@@ -1,64 +1,71 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  background-color: #121212 !important;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  font-weight: 500 !important;
+  color: #8f97ff !important;
+  text-decoration: inherit !important;
 }
 a:hover {
-  color: #535bf2;
+  color: #a4abff !important;
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
+  background-color: #121212 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3.2em !important;
+  line-height: 1.1 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  border-radius: 8px !important;
+  border: 1px solid #333333 !important;
+  padding: 0.6em 1.2em !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  background-color: #1a1a1a !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  cursor: pointer !important;
+  transition: border-color 0.25s !important;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #8f97ff !important;
+  background-color: #2a2a2a !important;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto #8f97ff !important;
 }
 
+/* Override light mode preferences with dark mode */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: rgba(255, 255, 255, 0.95) !important;
+    background-color: #121212 !important;
   }
   a:hover {
-    color: #747bff;
+    color: #a4abff !important;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #1a1a1a !important;
+    color: rgba(255, 255, 255, 0.95) !important;
   }
 }
