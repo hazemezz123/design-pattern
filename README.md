@@ -1,12 +1,96 @@
-# React + Vite
+# Design Pattern Principles (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application focused on demonstrating design pattern principles in modern web development. This project is built with Vite for fast development and uses React 19 with Bootstrap for styling.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application serves as a learning resource for understanding and implementing various design patterns in React applications. Design patterns are reusable solutions to common problems in software design, and this project aims to showcase their practical implementation in a React context.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Modern React (v19) implementation
+- Fast development with Vite
+- Bootstrap styling
+- ESLint configuration for code quality
+
+## Installation
+
+To get started with this project, follow these steps:
+
+```bash
+# Clone the repository (if applicable)
+# git clone <repository-url>
+
+# Navigate to the project directory
+cd design-pattern
+
+# Install dependencies
+npm install
+```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm run dev`
+
+Runs the app in development mode.
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+The page will reload when you make changes.
+
+### `npm run build`
+
+Builds the app for production to the `dist` folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+### `npm run lint`
+
+Runs ESLint to check for code quality issues.
+
+### `npm run preview`
+
+Locally previews the production build.
+
+## Project Structure
+
+```
+/
+├── public/            # Public assets
+├── src/               # Source files
+│   ├── assets/        # Static assets
+│   ├── App.jsx        # Main application component
+│   ├── index.css      # Global styles
+│   └── main.jsx       # Application entry point
+├── .gitignore         # Git ignore file
+├── eslint.config.js   # ESLint configuration
+├── index.html         # HTML entry point
+├── package.json       # Project dependencies and scripts
+└── vite.config.js     # Vite configuration
+```
+
+## Dependencies
+
+### Production Dependencies
+
+- React (v19.0.0)
+- React DOM (v19.0.0)
+- Bootstrap (v5.3.3)
+
+### Development Dependencies
+
+- Vite (v6.2.0)
+- ESLint (v9.21.0)
+- Various ESLint plugins for React
+- TypeScript types for React
+
+## Browser Support
+
+This project supports modern browsers with the latest JavaScript features.
+
+## License
+
+[Add license information here]
+
+## Contributing
+
+[Add contribution guidelines here]
