@@ -4,11 +4,12 @@ import { ThemeContextProvider } from "./Context/ThemeContext";
 import SingleTon from "./components/SingleTon";
 import Adapter from "./components/Adapter";
 import Template from "./components/Template";
-import Composite from "./components/Composite ";
+import Composite from "./components/Composite.jsx";
+ 
 const App = () => {
   return (
     <ThemeContextProvider>
-      <div style={{ textAlign: "center" }}>
+      <div >
         Welcome To the deign pattern Principles
         <section>
           <FactoryPattern />
